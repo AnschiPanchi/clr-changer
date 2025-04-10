@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grandparent{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            align-content: center;
+        }
+        .parent{
+            margin: auto;   
+            display: flex;
+            justify-content: center;
+            column-gap: 30px;
+        }
+
+        .blue{
+            background-color: blue;
+            
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .green{
+            background-color: green;
+        }
+        .red{
+            background-color: red;
+        }
+
+        button{
+            width: 10vw;
+            height: 5vh;
+            border-style: none;
+            border-radius: 10px;
+            border-style: solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="grandparent">
+        <p style="font-size: 2rem;">Colour Changer</p>
+        <div class="parent">
+            <button class="blue"></button>
+            <button class="yellow"></button>
+            <button class="green"></button>
+            <button class="red"></button>
+        </div>
+        <p>Click to Change Background Color of page|| Double Click to Remove the Color</p>
+    </div>
+    
+    <script src="color-changer.js"></script>
+</body>
+
+</html>
